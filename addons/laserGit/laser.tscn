@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdxjy1yy8tqeu"]
+
+[ext_resource type="Script" path="res://laser/laser.gd" id="1_xyxma"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_xyxma")
+
+[node name="Laser" type="RayCast3D" parent="."]
+target_position = Vector3(1, 1, 2.08165e-12)
+collision_mask = 7
+
+[node name="Beams" type="Node3D" parent="."]
+
+[node name="Splits" type="Node3D" parent="."]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://wfbn16mxdrtl"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_nag17"]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jodxn"]
+albedo_color = Color(1, 0, 0, 1)
+emission_enabled = true
+emission = Color(1, 0, 0, 1)
+
+[node name="laserBeam" type="MeshInstance3D"]
+mesh = SubResource("SphereMesh_nag17")
+surface_material_override/0 = SubResource("StandardMaterial3D_jodxn")
